@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "meet-man"
+version = "0.1.2"
+description = "Google Meet Client"
+authors = ["Arghya Sarkar <arghyasarkar.joker@gmail.com>"]
+license="MIT"
+readme="README.md"
+homepage= "https://github.com/arghyagod-coder/meet-man"
+repository = "https://github.com/arghyagod-coder/meet-man"
+keywords = ["meet","meetman","google meet","google-meet-client"]
+
+classifiers=[
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Operating System :: OS Independent",
+    ]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyQtWebEngine = "^5.15.4"
+PyQt5 = "^5.15.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+meet = "meet-man.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
